@@ -1,2 +1,2 @@
 #!/bin/bash
-cp -u * html
+find "$(pwd)" -name "*.html" -type f -newer "$(dirname "$(pwd)")"/ -exec cp -u "{}" "$(dirname "$(pwd)")"/ \;
