@@ -1,0 +1,2 @@
+#!/bin/bash
+input="Your input goes here"; echo "$input" | tr -d 'cC'
